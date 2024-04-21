@@ -6,13 +6,12 @@ export const PROFILE_AVATAR =
 
 export const BACKGROUND_IMG =
   "https://assets.nflxext.com/ffe/siteui/vlv3/16006346-87f9-4226-bc25-a1fb346a2b0c/9662d0fd-0547-4665-b887-771617268815/IN-en-20240115-popsignuptwoweeks-perspective_alpha_website_small.jpg";
-
+console.log("first", import.meta.env.VITE_REACT_APP_TMDB_KEY);
 export const TMDB_API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlYjk5OTk0MWQyOTNkZGYxY2RmNTc4YmE1YWYzNWY3ZSIsInN1YiI6IjY1YjUwM2VmNThlZmQzMDE0OGNhMDliOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.hAGSstGL-MKe6yd-rtgg-9667Hyz-YC2opfzFwgZiqg",
+    Authorization: `Bearer ${import.meta.env.VITE_REACT_APP_TMDB_KEY}`,
   },
 };
 
@@ -32,5 +31,3 @@ export const SUPPORTED_LANGUAGES = [
     name: "Español",
   },
 ];
-
-export const OPENAI_KEY = "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";
