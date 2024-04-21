@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header";
-import MainContainer from "../components/Browse/MainContainer.jsX";
+import MainContainer from "../components/Browse/MainContainer.jsx";
 import SecondaryContainer from "../components/Browse/SecondaryContainer";
 
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
@@ -11,7 +11,6 @@ import GptSearchView from "../components/GPTSearch/GptSearchView";
 import { useSelector } from "react-redux";
 
 const Browse = () => {
-  
   const showGptSearch = useSelector((state) => state.gpt?.showGptSearch);
   useNowPlayingMovies();
   usePopularMovies();
